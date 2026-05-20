@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Record</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- ✨ HEADER ADDED -->
+  <div class="header">
+    <div class="left">
+      <img src="https://bl-i.thgim.com/public/news/hr4jbo/article68485273.ece/alternates/FREE_1200/Bharat%20Coking%20Coal.jpg" alt="BCCL Logo">
+      <div>
+        <h1>Bharat Coaking Coal Limited (BCCL)</h1>
+        <p>Ministry of Coal Mining, Government of India</p>
+      </div>
+    </div>
+		<div class="right">
+      <button>Units</button>
+      <button>Gallary</button>
+      <button>Production</button>
+    </div>
+  </div>
+
+<h2>Edit File Record</h2>
+
+<form method="POST">
+
+    <label>File Number:</label><br>
+    <input type="text" name="file_number" value="{{ record.file_number }}" required><br><br>
+
+    <label>Title:</label><br>
+    <input type="text" name="title" value="{{ record.title }}" required><br><br>
+
+    <label>Department:</label><br>
+    <input type="text" name="department" value="{{ record.department }}" required><br><br>
+
+    <label>Created Date:</label><br>
+    <input type="date" name="created_date" value="{{ record.created_date }}" required><br><br>
+
+    <label>Status:</label><br>
+    <input type="text" name="status" value="{{ record.status }}" required><br><br>
+
+    <label>Remarks:</label><br>
+    <textarea name="remarks">{{ record.remarks }}</textarea><br><br>
+
+    <button type="submit">Update Record</button>
+</form>
+
+<br>
+<a href="/view">Back to Records</a>
+
+</body>
+</html>

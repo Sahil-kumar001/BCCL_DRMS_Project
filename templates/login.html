@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BCCL Admin Login</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<!-- ✨ HEADER -->
+<div class="header">
+    <div class="left">
+        <img src="https://bl-i.thgim.com/public/news/hr4jbo/article68485273.ece/alternates/FREE_1200/Bharat%20Coking%20Coal.jpg" alt="BCCL Logo">
+        <div>
+            <h1>Bharat Coking Coal Limited (BCCL)</h1>
+            <p>Ministry of Coal, Government of India</p>
+        </div>
+    </div>
+    <div class="right">
+        <button>Units</button>
+        <button>Gallery</button>
+        <button>Production</button>
+    </div>
+</div>
+
+{% block content %}
+<div class="login-wrapper">
+    <div class="page-content">
+        <div class="login-box">
+            <h2>BCCL Admin Login</h2>
+
+            <form method="POST">
+                <input type="text" name="username" placeholder="Username" required><br><br>
+                <input type="password" name="password" placeholder="Password" required><br><br>
+                <button type="submit">Login</button>
+            </form>
+
+            {% if error %}
+                <p style="color:red">{{ error }}</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+<!-- ✨ FOOTER ADDED -->
+<footer class="footer">
+    <p>© 2026 Bharat Coking Coal Limited (BCCL)</p>
+    <p>All Rights Reserved | Ministry of Coal, Government of India</p>
+    <p>@sahil kumar</p>
+</footer>
+
+</body>
+</html>

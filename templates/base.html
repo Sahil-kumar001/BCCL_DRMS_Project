@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BCCL File Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ✨ HEADER ADDED -->
+  <div class="header">
+    <div class="left">
+      <img src="https://bl-i.thgim.com/public/news/hr4jbo/article68485273.ece/alternates/FREE_1200/Bharat%20Coking%20Coal.jpg" alt="BCCL Logo">
+      <div>
+        <h1>Bharat Coaking Coal Limited (BCCL)</h1>
+        <p>Ministry of Coal Mining, Government of India</p>
+      </div>
+    </div>
+		<div class="right">
+      <button>Units</button>
+      <button>Gallary</button>
+      <button>Production</button>
+    </div>
+
+<nav class="navbar navbar-dark bg-dark p-2">
+    <span class="navbar-brand">BCCL File Tracking System</span>
+    <a href="/logout" class="btn btn-danger btn-sm">Logout</a>
+</nav>
+
+<div class="container mt-4">
+    {% block content %}{% endblock %}
+</div>
+<!-- Footer -->
+<footer class="footer">
+    <p>
+        © 2026 Bharat Coking Coal Limited (BCCL) <br>
+        Ministry of Coal, Government of India
+    </p>
+</footer>
+
+</body>
+</html>
